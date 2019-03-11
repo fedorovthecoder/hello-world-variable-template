@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<h2>Item for sale</h2>
+<table style="width:100%">
+    <tr>
+        <th>Description</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td><p th:text="${item}"/></td>
+        <td><p th:text="${price}"/></td>
+    </tr>
+</table>
+</body>
+</html>
